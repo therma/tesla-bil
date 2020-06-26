@@ -7,7 +7,7 @@ export function App() {
   return (
     <div>
       <header className="header">
-        <img src=logo />
+        <img src={logo} />
       </header>
       <div className="wrapper">
         <TeslaBattery />
