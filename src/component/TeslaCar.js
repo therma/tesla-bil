@@ -1,6 +1,6 @@
 import React from "react";
 
-const TeslaCar = ({wheels, speed}) => 
+export const TeslaCar = ({wheels, speed}) => 
     <div className="tesla-car">
           <div className="tesla-wheels">
             <div
@@ -11,5 +11,3 @@ const TeslaCar = ({wheels, speed}) =>
             />
           </div>
     </div>
-
-export default TeslaCar;

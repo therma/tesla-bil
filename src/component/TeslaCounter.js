@@ -1,6 +1,6 @@
 import React from "react";
 
-const TeslaCounter = ({model, title, unit, incrHandler, decrHandler, onFocusHandler, onBlurHandler}) => 
+export const TeslaCounter = ({model, title, unit, incrHandler, decrHandler, onFocusHandler, onBlurHandler}) => 
     <div className="tesla-counter">
         <p className="tesla-counter__title">{title}</p>
         <div className="tesla-counter__container cf">
@@ -31,5 +31,3 @@ const TeslaCounter = ({model, title, unit, incrHandler, decrHandler, onFocusHand
             </div>
         </div>
     </div>
-
-export default TeslaCounter;

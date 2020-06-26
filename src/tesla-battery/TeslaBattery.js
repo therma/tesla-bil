@@ -1,11 +1,7 @@
 import React, { Component } from "react";
 import teslaService from "./tesla-battery.service";
 import { initialData } from "../mocks/data";
-import TeslaCar from "../component/TeslaCar";
-import TeslaStats from "../component/TeslaStats";
-import TeslaCounter from "../component/TeslaCounter";
-import TeslaClimate from "../component/TeslaClimate";
-import TeslaWheels from "../component/TeslaWheels";
+import {TeslaCar, TeslaStats, TeslaCounter, TeslaClimate, TeslaWheels} from "../component";
 
 export class TeslaBattery extends Component {
   state = initialData;
@@ -27,13 +23,8 @@ export class TeslaBattery extends Component {
   };
 
   incrementSpeed = () => {
-    // TODO: If the speed's value is less than the max speed then increase the speed's value by the speed.step
-    
-//    debugger;
-    const speed2 = this.state.speed;
-    speed2.value += 5;
-
-    this.setState({speed: speed2});
+    // If the speed's value is less than the max speed then increase the speed's value by the speed.step
+    this.setState(state => ({speed: {...state.speed, value: state.speed.value + state.speed.step}}));
   };
   incrementTemperature = () => {
     // TODO: If the temperature's value is less than the max temperature then increase the temperature's value by the temperature.step

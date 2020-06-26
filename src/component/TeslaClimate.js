@@ -1,6 +1,6 @@
 import React from "react";
 
-const TeslaClimate = ({climate, temperature, changeClimateHandler, onBlurHandler, onFocusHandler}) => 
+export const TeslaClimate = ({climate, temperature, changeClimateHandler, onBlurHandler, onFocusHandler}) => 
     <div>
         <label
         className={`tesla-climate__item ${
@@ -26,5 +26,3 @@ const TeslaClimate = ({climate, temperature, changeClimateHandler, onBlurHandler
         />
         </label>
     </div>
-
-export default TeslaClimate;

@@ -1,6 +1,6 @@
 import React from "react";
 
-const TeslaWheels = ({wheels, changeHandler, onBlurHandler, onFocusHandler}) => 
+export const TeslaWheels = ({wheels, changeHandler, onBlurHandler, onFocusHandler}) => 
     <div className="tesla-wheels">
         <p className="tesla-wheels__title">Wheels</p>
         <div className="tesla-wheels__container cf">
@@ -29,5 +29,3 @@ const TeslaWheels = ({wheels, changeHandler, onBlurHandler, onFocusHandler}) =>
         ))}
         </div>
     </div>
-
-export default TeslaWheels;
